@@ -14,3 +14,6 @@ var outerWear = "sweater";
 myOutfit();
 
 //52
+function timesFive(num) {
+    return num * 5;
+  }
