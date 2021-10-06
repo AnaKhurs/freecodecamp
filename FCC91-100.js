@@ -76,3 +76,12 @@ for (var i = 9; i > 0; i -= 2) {
 }
 // Only change code below this line
 
+//98
+// Setup
+var myArr = [ 2, 3, 4, 5, 6];
+var total = 0;
+for (var i = 0; i < myArr.length; i++) {
+  total += myArr[i];
+}
+
+// Only change code below this line
