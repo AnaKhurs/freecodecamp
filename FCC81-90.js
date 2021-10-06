@@ -35,3 +35,17 @@ var testObj = {
   
   var entreeValue = testObj["an entree"];   // Change this line
   var drinkValue = testObj["the drink"];    // Change this line
+
+
+  //84!!!!!!
+  // Setup
+var testObj = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+  };
+  
+  // Only change code below this line
+  
+  var playerNumber = 16;       // Change this line
+  var player = testObj[playerNumber];   // Change this line
