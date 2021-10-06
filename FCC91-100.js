@@ -100,3 +100,14 @@ for (var i = 0; i < arr.length; i++){
 }
 
 multiplyAll([[1,2],[3,4],[5,6,7]]);
+
+//100
+// Setup
+var myArray = [];
+var i = 10;
+do {
+  myArray.push(i);
+  i++;
+}
+// Only change code below this line
+while (i < 5);
