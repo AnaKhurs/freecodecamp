@@ -38,3 +38,16 @@ var myPlants = [
 var secondTree = "";
 
 secondTree = myPlants[1].list[1];
+
+//93
+
+
+//94
+// Setup
+var myArray = [];
+var i = 5;
+while(i <= 5 && i >= 0) {
+ myArray.push(i);
+ i--;
+}
+// Only change code below this line
