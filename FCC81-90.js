@@ -49,3 +49,15 @@ var testObj = {
   
   var playerNumber = 16;       // Change this line
   var player = testObj[playerNumber];   // Change this line
+
+  //85
+  // Setup
+var myDog = {
+    "name": "Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+  };
+  
+  myDog["name"] = "Happy Coder";
+  // Only change code below this line
