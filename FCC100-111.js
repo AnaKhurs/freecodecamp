@@ -30,3 +30,10 @@ function randomFraction() {
     }
     
     convertToInteger("56");
+
+    //105
+    function convertToInteger(str) {
+        return parseInt(str, 2);
+        }
+        
+        convertToInteger("10011");
