@@ -70,3 +70,7 @@ Object.freeze(MATH_CONSTANTS);
   return MATH_CONSTANTS.PI;
 }
 const PI = freezeObj();
+
+
+// 6 Use Arrow Functions to Write Concise Anonymous Functions
+const magic = () => new Date()
