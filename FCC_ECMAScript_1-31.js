@@ -21,7 +21,7 @@ function checkScope() {
   return i;
 }
 
-//Declare a Read-Only Variable with the const Keyword
+//3 Declare a Read-Only Variable with the const Keyword
 function printManyTimes(str) {
 
   // Only change code below this line
@@ -35,3 +35,21 @@ function printManyTimes(str) {
 
 }
 printManyTimes("freeCodeCamp");
+
+//4 Mutate an Array Declared with const
+const s = [5, 7, 2];
+function editInPlace() {
+
+s[0] = 2; 
+s[1] = 5; 
+s[2] = 7; 
+  return s;
+  // Only change code below this line
+
+  // Using s = [2, 5, 7] would be invalid
+
+  // Only change code above this line
+}
+editInPlace();
+
+//5 Prevent Object Mutation
