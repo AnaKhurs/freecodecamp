@@ -89,3 +89,13 @@ const increment = (number , value = 1) => number + value;
 // Only change code above this line
 
 
+//9
+
+
+//10 Use the Spread Operator to Evaluate Arrays In-Place
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+arr2 = [...arr1];  // Change this line
+
+console.log(arr2);
