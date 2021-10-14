@@ -89,8 +89,10 @@ const increment = (number , value = 1) => number + value;
 // Only change code above this line
 
 
-//9
-
+//9 Use the Rest Parameter with Function Parameters
+const sum = (...args) => {
+  return args.reduce((a, b) => a + b, 0);
+}
 
 //10 Use the Spread Operator to Evaluate Arrays In-Place
 const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
