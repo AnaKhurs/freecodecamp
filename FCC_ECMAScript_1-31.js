@@ -116,3 +116,14 @@ const {today, tomorrow} = HIGH_TEMPERATURES;
 // Only change code above this line
 
 //12 Use Destructuring Assignment to Assign Variables from Objects
+
+
+
+
+
+//18 Write Concise Object Literal Declarations Using Object Property ShorthandPassed
+const createPerson = (name, age, gender) => {
+  // Only change code below this line
+  return { name, age, gender };
+  // Only change code above this line
+};
