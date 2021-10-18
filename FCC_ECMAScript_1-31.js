@@ -139,3 +139,12 @@ const bicycle = {
 // Only change code above this line
 bicycle.setGear(3);
 console.log(bicycle.gear);
+
+//22 Create a Module Script
+<html>
+  <body>
+    <!-- Only change code below this line -->
+<script type = "module" src="index.js"></script>
+    <!-- Only change code above this line -->
+  </body>
+</html>
