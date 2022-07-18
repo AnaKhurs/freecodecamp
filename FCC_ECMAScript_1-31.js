@@ -134,8 +134,16 @@ const { today: {low: lowToday, high: highToday} }  = LOCAL_FORECAST
 let a = 8, b = 6;
 // Only change code below this line
  [a,b] = [b,a];
- 
 
+ //15 Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements
+ const source = [1,2,3,4,5,6,7,8,9,10];
+ function removeFirstTwo(list) {
+   // Only change code below this line
+   const [,,...arr] = list;
+   // Only change code above this line
+   return arr;
+ }
+ const arr = removeFirstTwo(source);
 
 
 //18 Write Concise Object Literal Declarations Using Object Property ShorthandPassed
