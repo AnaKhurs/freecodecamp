@@ -130,6 +130,12 @@ const { today: {low: lowToday, high: highToday} }  = LOCAL_FORECAST
 
 // Only change code above this line
 
+//14 Use Destructuring Assignment to Assign Variables from Arrays
+let a = 8, b = 6;
+// Only change code below this line
+ [a,b] = [b,a];
+ 
+
 
 
 //18 Write Concise Object Literal Declarations Using Object Property ShorthandPassed
