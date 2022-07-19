@@ -93,3 +93,8 @@ let result = quoteSample.match(alphabetRegexV2).length;
 let quoteSample = "The five boxing wizards jump quickly.";
 let nonAlphabetRegex = /\W/g; // Change this line
 let result = quoteSample.match(nonAlphabetRegex).length;
+
+//20 Match All Numbers
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // Change this line
+let result = movieName.match(numRegex).length;
