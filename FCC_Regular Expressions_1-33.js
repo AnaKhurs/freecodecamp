@@ -73,3 +73,8 @@ let result = text.match(myRegex);
 //15 Find One or More Criminals in a Hunt
 let reCriminals = /C+/; // Change this line
 
+
+//16 Match Beginning String Patterns
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal);
