@@ -64,3 +64,8 @@ let chewieQuote = Aaaaaaaaaaaaaaaarrrgh!
 let chewieRegex = /Aa*/; // Change this line
 // Only change code above this line
 let result = chewieQuote.match(chewieRegex);
+
+//14 Find Characters with Lazy Matching
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<h*?1>/; // Change this line
+let result = text.match(myRegex);
