@@ -47,3 +47,8 @@ let result = quoteSample.match(alphabetRegex); // Change this line
 let quoteSample = "Blueberry 3.141592653s are delicious.";
 let myRegex = /[h-s2-6]/gi; // Change this line
 let result = quoteSample.match(myRegex); // Change this line
+
+//11 Match Single Characters Not Specified
+let quoteSample = "3 blind mice.";
+let myRegex = /[^0-9aeiou]/gi; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
