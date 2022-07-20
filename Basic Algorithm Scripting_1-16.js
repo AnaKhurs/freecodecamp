@@ -12,3 +12,10 @@ function reverseString(str) {
   }
   
   reverseString("hello");
+
+  //3 Factorialize a Number
+  function factorialize(num) {
+    return (num === 1 || num === 0) ? 1 : num * factorialize(num - 1);
+    }
+    
+    factorialize(5);
