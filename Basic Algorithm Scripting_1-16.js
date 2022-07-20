@@ -5,3 +5,10 @@ function convertCtoF(celsius) {
 }
 
 convertCtoF(30);
+
+//2 Reverse a String
+function reverseString(str) {
+  return str.split("").reverse().join("");
+  }
+  
+  reverseString("hello");
