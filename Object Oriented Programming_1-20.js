@@ -30,3 +30,10 @@ let dog = {
 };
 
 dog.sayLegs();
+
+//5 Define a Constructor Function
+function Dog() {
+  this.name = "Albert";
+  this.color = "blue";
+  this.numLegs = 2;
+}
