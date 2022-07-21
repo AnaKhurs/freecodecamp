@@ -302,3 +302,8 @@ function Bird() {
     return weight;
   };
 }
+
+//25 Understand the Immediately Invoked Function Expression (IIFE)
+(function () {
+  console.log("A cozy nest is ready");
+})()
