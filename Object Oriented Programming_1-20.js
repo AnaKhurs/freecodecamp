@@ -37,3 +37,12 @@ function Dog() {
   this.color = "blue";
   this.numLegs = 2;
 }
+
+//6 Use a Constructor to Create Objects
+function Dog() {
+  this.name = "Rupert";
+  this.color = "brown";
+  this.numLegs = 4;
+}
+// Only change code below this line
+const hound = new Dog();
