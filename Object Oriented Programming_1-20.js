@@ -180,3 +180,30 @@ Dog.prototype.isPrototypeOf(beagle);  // yields true
 
 // Fix the code below so that it evaluates to true
 Object.prototype.isPrototypeOf(Dog.prototype);
+
+//17 Use Inheritance So You Don't Repeat Yourself
+function Cat(name) {
+  this.name = name;
+}
+
+Cat.prototype = {
+  constructor: Cat,
+};
+
+function Bear(name) {
+  this.name = name;
+}
+
+Bear.prototype = {
+  constructor: Bear,
+
+};
+
+function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
