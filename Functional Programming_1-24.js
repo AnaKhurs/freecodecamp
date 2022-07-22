@@ -199,3 +199,15 @@ const ratings = watchList.map(function(movie) {
     rating: movie["imdbRating"]
   }
 });
+
+//8 Implement map on a Prototype
+const s = [23, 65, 98, 5];
+Array.prototype.myMap = function(callback) {
+  var newArray = [];
+  for(let i = 0; i < this.length ; i++ ){
+  newArray.push(callback(this[i]));}
+  return newArray;
+};
+const new_s = s.myMap(function(item) {
+  return item * 2;
+});
