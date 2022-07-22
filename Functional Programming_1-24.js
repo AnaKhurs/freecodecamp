@@ -61,3 +61,9 @@ let fixedValue = 4;
 function incrementer() {
    return fixedValue + 1
 }
+
+//5 Pass Arguments to Avoid External Dependence in a Function
+let fixedValue = 4;
+function incrementer( value) {
+  return value +1
+}
