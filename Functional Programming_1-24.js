@@ -67,3 +67,15 @@ let fixedValue = 4;
 function incrementer( value) {
   return value +1
 }
+
+//6 Refactor Global Variables Out of Functions
+const bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
+function add(list, bookName) {
+  let newList = [...list, bookName];
+  return newList;
+}
+function remove(list, bookName) {
+  return list.filter((l)=>{
+    return l!==bookName
+  })
+}
