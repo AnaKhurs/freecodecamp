@@ -55,3 +55,9 @@ var finalTabs = socialWindow
   .tabOpen()
   .join(videoWindow.tabClose(2))
   .join(workWindow.tabClose(1).tabOpen());
+
+  //4 Avoid Mutations and Side Effects Using Functional Programming
+let fixedValue = 4;
+function incrementer() {
+   return fixedValue + 1
+}
