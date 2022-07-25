@@ -331,3 +331,14 @@ let filtered = watchList.filter( (item) => item["imdbRating"] >= 8 );
 let filteredList = filtered.map( (item) => ({"title": item["Title"], "rating":item["imdbRating"]}) );
 
 console.log(filteredList);
+
+//10 Implement the filter Method on a Prototype
+const s = [23, 65, 98, 5];
+Array.prototype.myFilter = function(callback) {
+  const newArray = [];
+  s.forEach((num)=>{if(callback(num))newArray.push(num)})
+  return newArray;
+};
+const new_s = s.myFilter(function(item) {
+  return item % 2 === 1;
+});
