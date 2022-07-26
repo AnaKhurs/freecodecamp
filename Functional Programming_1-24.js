@@ -342,3 +342,10 @@ Array.prototype.myFilter = function(callback) {
 const new_s = s.myFilter(function(item) {
   return item % 2 === 1;
 });
+
+//11 Return Part of an Array Using the slice Method
+function sliceArray(anim, beginSlice, endSlice) {
+return anim.slice(beginSlice, endSlice)
+}
+const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+sliceArray(inputAnim, 1, 3);
