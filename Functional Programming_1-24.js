@@ -512,3 +512,10 @@ const squareList = arr => {
 };
 const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
 console.log(squaredIntegers);
+
+//17 Sort an Array Alphabetically using the sort Method
+function alphabeticalOrder(arr) {
+  return arr.sort()
+}
+
+alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
