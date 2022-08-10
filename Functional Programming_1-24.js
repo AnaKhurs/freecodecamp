@@ -532,3 +532,10 @@ function splitify(str) {
 return str.split(/\W/)
 }
 splitify("Hello World,I-am code");
+
+//20 Combine an Array into a String Using the join Method
+function sentensify(str) {
+return str.split(/\W/).join(" ")
+}
+
+sentensify("May-the-force-be-with-you");
