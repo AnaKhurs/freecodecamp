@@ -550,3 +550,9 @@ function checkPositive(arr) {
 return arr.every((i) => i >= 0)
 }
 checkPositive([1, 2, 3, -4, 5]);  
+
+//23 Use the some Method to Check that Any Elements in an Array Meet a Criteria
+function checkPositive(arr) {
+return arr.some(i => i >= 0)
+}
+checkPositive([1, 2, 3, -4, 5]);
