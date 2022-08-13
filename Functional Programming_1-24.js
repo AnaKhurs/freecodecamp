@@ -332,6 +332,7 @@ let filteredList = filtered.map( (item) => ({"title": item["Title"], "rating":it
 
 console.log(filteredList);
 
+<<<<<<< Updated upstream
 //10 Implement the filter Method on a Prototype
 const s = [23, 65, 98, 5];
 Array.prototype.myFilter = function(callback) {
@@ -566,3 +567,36 @@ return function(y) {
   }
 }
 add(10)(20)(30);
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+var cat = {name:"A"};
+function s(fel){
+  fel.name = "wild";
+  fel= { name: "TAbby"
+  }
+}
+s(cat)
+console.log(cat.name)*/
+
+var a =['1','2','3'];
+a[100] = '100';
+console.log(a.length)
+>>>>>>> Stashed changes
