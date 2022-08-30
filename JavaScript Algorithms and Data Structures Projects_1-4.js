@@ -37,3 +37,25 @@ function convertToRoman(num) {
   
     return str;
   }
+
+//3 Caesars Cipher
+function rot13(str) {
+  let astr=[];
+  let character;
+  let charCode;
+  str.split(" ");
+  for (let i = 0; i<str.length;i++){
+  for(let j = 0; j<str[i].length;j++){
+  if(str[i].charCodeAt(j)>=65 && str[i].charCodeAt(j)<=90){
+  charCode = str[i].charCodeAt(j) - 65 + 13;
+  charCode = (charCode%26)+65;
+  }else{
+  charCode=str[i].charCodeAt(j);
+  }
+  character = String.fromCharCode(charCode);
+  astr.push(character);
+  }
+  }
+  return astr.join('');
+  }
+  rot13("SERR PBQR PNZC");  
