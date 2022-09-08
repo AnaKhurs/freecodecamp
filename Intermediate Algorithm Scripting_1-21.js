@@ -22,3 +22,14 @@ function diffArray(arr1, arr2) {
   return newArr.filter(checkNum);
 }
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+
+//3 Seek and Destroy
+function destroyer(arr) {
+  let args = Array.prototype.slice.call(arguments);
+  args.splice(0,1);
+  return arr.filter(function(element){
+      return args.indexOf(element) === -1;
+  });
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
