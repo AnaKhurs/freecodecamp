@@ -33,3 +33,15 @@ function destroyer(arr) {
 }
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+
+//4 Wherefore art thou
+function whatIsInAName(collection, source) {
+  let arr = [];
+  let keysToCheck = Object.keys(source);
+  arr = collection.filter(function(item) {
+     return keysToCheck.every(function(key) {
+       return item.hasOwnProperty(key) && item[key] === source[key];
+     });
+  });
+  return arr;
+}
