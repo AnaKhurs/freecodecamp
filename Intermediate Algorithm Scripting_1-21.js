@@ -55,3 +55,11 @@ function spinalCase(str) {
   return spinalStr.toLowerCase();
 }
 spinalCase("thisIsSpinalTap");
+
+//6 Confirm the Ending
+function confirmEnding(str, target) {
+  let newStr = '';
+  newStr = str.substring(str.length - target.length);
+  return newStr === target;
+}
+confirmEnding("Bastian", "n");
