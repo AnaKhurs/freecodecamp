@@ -63,3 +63,19 @@ function confirmEnding(str, target) {
   return newStr === target;
 }
 confirmEnding("Bastian", "n");
+
+
+// 7 Pig Latin
+function translatePigLatin(str) {
+  const regex = /^[^aeiou]+/g;
+  const consonants = str.match(regex);
+  if (consonants == null) {
+    str = str.concat('way');
+  }
+  else {
+    str = str.replace(regex, '').concat(consonants).concat('ay');
+  }
+  return str;
+}
+
+translatePigLatin("consonant");
