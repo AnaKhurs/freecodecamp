@@ -90,3 +90,14 @@ function myReplace(str, before, after) {
   return str.replace(before, after);
 }
 myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+
+//9 DNA Pairing
+const lookup = Object.create(null);
+lookup.A = 'T';
+lookup.T = 'A';
+lookup.C = 'G';
+lookup.G = 'C';
+function pairElement(str) {
+ return str.split('').map(function(p) {return [p, lookup[p]];});
+}
+pairElement("GCG");
