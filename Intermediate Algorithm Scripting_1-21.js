@@ -101,3 +101,14 @@ function pairElement(str) {
  return str.split('').map(function(p) {return [p, lookup[p]];});
 }
 pairElement("GCG");
+
+//10 Repeat a String Repeat a String
+function repeatStringNumTimes(str, num) {
+  let newStr = '';
+  while (num > 0) {
+    newStr += str;
+    num--;
+  }
+  return newStr;
+}
+repeatStringNumTimes("abc", 3);
