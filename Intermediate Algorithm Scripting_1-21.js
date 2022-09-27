@@ -112,3 +112,21 @@ function repeatStringNumTimes(str, num) {
   return newStr;
 }
 repeatStringNumTimes("abc", 3);
+
+//11 Missing letters
+function fearNotLetter(str) {
+  let start = str.charCodeAt(0) + 1;
+  let missing = ''; 
+  for(var i = 1; i < str.length; i++){
+    if(str.charCodeAt(i) !== start){
+      missing += String.fromCharCode(start);
+      start++;
+    }
+    start ++;
+  }
+  if(missing == ''){
+    missing = undefined;
+  }
+  return missing;
+}
+fearNotLetter("pqrt");
