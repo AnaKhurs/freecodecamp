@@ -130,3 +130,21 @@ function fearNotLetter(str) {
   return missing;
 }
 fearNotLetter("pqrt");
+
+//12 Sorted Union
+function uniteUnique(arr) {
+ let getArgsArr = (args) => {
+    let finalList = []
+    for (let i in args) {
+      finalList.push(args[i])
+    }
+    return finalList.flat()
+  }
+  let uniqueArgs = (argsArr) => {
+    return argsArr.filter((item, pos) => {
+      return argsArr.indexOf(item) === pos; 
+    })  
+  }
+  return uniqueArgs(getArgsArr(arguments))
+}
+console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
