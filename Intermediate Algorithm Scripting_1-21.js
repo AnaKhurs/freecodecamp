@@ -148,3 +148,14 @@ function uniteUnique(arr) {
   return uniqueArgs(getArgsArr(arguments))
 }
 console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
+
+// 13 Convert HTML Entities
+function convertHTML(str) {
+  let regExp = [/&/g, /</g, />/g, /"/g, /'/g];
+  let chars = ['&amp;', '&lt;','&gt;','&quot;',"&apos;"];
+  for(let i = 0; i < chars.length; i++){
+    str = regExp[i][Symbol.replace](str, chars[i]);
+  }
+  return str;
+}
+convertHTML("Dolce & Gabbana");
