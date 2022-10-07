@@ -177,3 +177,28 @@ function sumFibs(num) {
   return sum;
 }
 sumFibs(4);
+
+//15 Sum All Primes
+function sumPrimes(num) {
+  let primes = [false, false];
+  for (let i = 2; i <= num; i++) {
+    primes[i] = true;
+  }
+  let limit = Math.sqrt(num);
+  for (let j = 2; j < num; j++) {
+    if (primes[j] === true) {
+      for (let k = j * j; k <= num; k += j) {
+        primes[k] = false;
+      }
+    }
+  }
+  let primesum = primes.reduce((sum, boo, index) => {
+    if (boo === true) {
+      return sum + index;
+    } else {
+      return sum;
+    }
+  });
+  return primesum;
+}
+sumPrimes(10);
