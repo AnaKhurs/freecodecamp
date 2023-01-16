@@ -163,3 +163,26 @@ function frankenSplice(arr1, arr2, n) {
 }
 
 frankenSplice([1, 2, 3], [4, 5], 1);
+
+//11 Falsy Bouncer
+function bouncer(arr) {
+  let check = arr.filter(function(i) {
+    return Boolean(i);
+  });
+  return check;
+}
+bouncer([7, "ate", "", false, 9]);
+
+//12 Where do I Belong
+function getIndexToIns(arr, num) {
+  if(arr.indexOf(num) === -1) {
+    arr.push(num);
+  }
+  let newArr = arr;
+  function sortNumber(a,b) {
+    return a - b;
+  }
+  newArr.sort(sortNumber);
+  return newArr.indexOf(num);
+}
+getIndexToIns([3, 10, 5], 3);
