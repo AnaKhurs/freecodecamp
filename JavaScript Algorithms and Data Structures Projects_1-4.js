@@ -125,3 +125,10 @@ let truncateString = (str, num) => str.length > num ? str.slice(0, num) + "..." 
 
 console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
 console.log(truncateString("Peter Piper picked a peck of pickled peppers", 11));
+
+//7 Finders Keepers
+function findElement(arr, func) {
+  return arr.filter(func)[0];
+}
+
+findElement([1, 2, 3, 4], num => num % 2 === 0);
