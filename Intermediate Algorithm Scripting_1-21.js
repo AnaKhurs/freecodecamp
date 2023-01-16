@@ -239,3 +239,17 @@ function dropElements(arr, func) {
   return myArr;
 }
 dropElements([1, 2, 3], function(n) {return n < 3; });
+
+//18 Steamroller
+function steamrollArray(ourArray) {
+  let emptyFlatArray = [];
+  ourArray.forEach(element => {
+      if (Array.isArray(element)) {
+          emptyFlatArray = emptyFlatArray.concat(steamrollArray(element));
+      } else {
+          emptyFlatArray.push(element);
+      }
+  });
+  console.log(emptyFlatArray);
+  return emptyFlatArray;
+}
