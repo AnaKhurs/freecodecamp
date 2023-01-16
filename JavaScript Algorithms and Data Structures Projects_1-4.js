@@ -119,3 +119,9 @@ function checkCashRegister(price, cash, cid) {
  return output;
 }
 checkCashRegister(19.5, 20, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);
+
+//6 Truncate a String
+let truncateString = (str, num) => str.length > num ? str.slice(0, num) + "..." : str;
+
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+console.log(truncateString("Peter Piper picked a peck of pickled peppers", 11));
