@@ -132,3 +132,16 @@ function findElement(arr, func) {
 }
 
 findElement([1, 2, 3, 4], num => num % 2 === 0);
+
+//8 Boo who
+function booWho(bool) {
+  let booly = typeof bool; //typeof tells you what type of object whatever follows it is
+  console.log(bool, booly);
+  if (booly == "boolean"){
+  return true;
+}
+  else {
+    return false;
+  }
+    }
+booWho(true);
