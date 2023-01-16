@@ -186,3 +186,26 @@ function getIndexToIns(arr, num) {
   return newArr.indexOf(num);
 }
 getIndexToIns([3, 10, 5], 3);
+
+//13 Mutations
+function mutation(arr) {
+  let y = [arr[0].toLowerCase(),arr[1].toLowerCase()];
+  let x = y[1].split("");
+  let ver;
+  for (let i=0;i<x.length;i++){
+   if (y[0].indexOf(x[i])>=0){
+     ver=true;
+   }else if(y[0].indexOf(x[i])<0){
+     ver=false;
+     break;
+   }
+  }
+  switch(ver){
+    case true:
+      return true;
+      
+    case false:
+      return false;    
+  }
+}
+mutation(["floor", "for"]);
