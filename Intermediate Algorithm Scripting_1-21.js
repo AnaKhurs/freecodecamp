@@ -226,3 +226,16 @@ let multiple = max;
   return multiple;
 }
 smallestCommons([1,5]);
+
+//17 Drop it
+function dropElements(arr, func) {
+  let myArr=[];
+  for (let i=0; i<arr.length; i++) {
+    if (func(arr[i])) {
+      myArr=arr.slice(i);
+      break;
+    }
+  }
+  return myArr;
+}
+dropElements([1, 2, 3], function(n) {return n < 3; });
