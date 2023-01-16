@@ -281,3 +281,29 @@ function addTogether() {
   	return checkNumber(arr[0]) ? sum = (num) => checkNumber(num) ? num + arr[0] : undefined : undefined
   }
 }
+
+//22 Make a Person
+const Person = function(firstAndLast) {
+  let fullName = firstAndLast;
+  this.getFirstName = function() {
+    return fullName.split(" ")[0];
+  };
+  this.getLastName = function() {
+    return fullName.split(" ")[1];
+  };
+  this.getFullName = function() {
+    return fullName;
+  };
+  this.setFirstName = function(name) {
+    fullName = name + " " + fullName.split(" ")[1];
+  };
+  this.setLastName = function(name) {
+    fullName = fullName.split(" ")[0] + " " + name;
+  };
+  this.setFullName = function(name) {
+    fullName = name;
+  };
+};
+
+const bob = new Person("Bob Ross");
+console.log(bob.getFullName());
