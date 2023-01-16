@@ -209,3 +209,14 @@ function mutation(arr) {
   }
 }
 mutation(["floor", "for"]);
+
+//14 Chunky Monkey
+function chunkArrayInGroups(arr, size) {
+  let masterArr = [];
+  let item = 0;
+  while(item < arr.length) {
+    masterArr.push(arr.slice(item, item += size));
+  }
+  return masterArr;
+}
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
