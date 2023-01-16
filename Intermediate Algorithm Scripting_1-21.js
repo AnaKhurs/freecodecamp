@@ -269,3 +269,15 @@ function truthCheck(collection, pre) {
 }
 
 truthCheck([{name: "Quincy", role: "Founder", isBot: false}, {name: "Naomi", role: "", isBot: false}, {name: "Camperbot", role: "Bot", isBot: true}], "isBot");
+
+//21 Arguments Optional
+function addTogether() {
+  let sum;
+  let arr = [...arguments];
+  const checkNumber = value => typeof value === "number" ? true : false
+  if (arr.length === 2) {
+  	return checkNumber(arr[0]) && checkNumber(arr[1]) ? arr.reduce((total, amount) => total + amount) : undefined
+  } else {
+  	return checkNumber(arr[0]) ? sum = (num) => checkNumber(num) ? num + arr[0] : undefined : undefined
+  }
+}
